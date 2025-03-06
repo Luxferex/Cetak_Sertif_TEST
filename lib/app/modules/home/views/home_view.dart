@@ -116,10 +116,13 @@ class HomeView extends GetView<HomeController> {
                   Row(
                     children: [
                       Expanded(
-                        child: _buildOptionCard(
-                          icon: Icons.landscape,
-                          title: 'Landscape',
-                          description: 'Horizontal Format',
+                        child: GestureDetector(
+                          onTap: () => Get.toNamed('/templates'),
+                          child: _buildOptionCard(
+                            icon: Icons.landscape,
+                            title: 'Landscape',
+                            description: 'Horizontal Format',
+                          ),
                         ),
                       ),
                       const SizedBox(width: 16),
