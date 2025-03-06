@@ -56,7 +56,7 @@ class TemplateGridView extends GetView<TemplateController> {
                 itemCount: 1, // For now, we only have one template
                 itemBuilder: (context, index) {
                   return GestureDetector(
-                    onTap: () => Get.toNamed('/editor', arguments: 'assets/landscape/sertifikat1.svg'),
+                    onTap: () => Get.toNamed('/editor', arguments: 'assets/landscape/sertifikat2.svg'),
                     child: Container(
                       decoration: BoxDecoration(
                         color: cardBackground,
